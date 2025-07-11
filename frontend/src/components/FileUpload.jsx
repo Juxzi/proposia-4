@@ -13,18 +13,14 @@ export default function FileUpload({ onFileSelected }) {
   };
 
   return (
-    <div className="upload-container" onClick={() => inputRef.current?.click()}>
-      <input
-        id="file-upload"
+
         type="file"
         accept=".txt,.pdf,.docx"
         ref={inputRef}
         onChange={handleChange}
         style={{ display: 'none' }}
       />
-      <label htmlFor="file-upload" className="upload-label">
-        {fileName || 'Choisir un fichier'}
-      </label>
+
     </div>
   );
 }

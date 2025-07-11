@@ -7,7 +7,7 @@ const upload = multer({ storage: multer.memoryStorage() });
 const app = express();
 const PORT = process.env.PORT || 3001;
 
-app.post('/api/generate', upload.single('file'), async (req, res) => {
+
   if (!req.file) {
     return res.status(400).send('No file');
   }

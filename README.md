@@ -1,6 +1,6 @@
 # Proposia Document Generator
 
-Cette application génère automatiquement des documents professionnels à partir d'un cahier des charges fourni par l'utilisateur. Le frontend React est optimisé pour Netlify et communique avec un backend Express relié à un workflow n8n.
+
 
 ## Arborescence
 ```
@@ -12,9 +12,7 @@ frontend/
     components/
       FileUpload.jsx
       Loader.jsx
-      Header.jsx
-      Features.jsx
-      Footer.jsx
+
     App.jsx
     index.jsx
     styles.css
@@ -27,14 +25,14 @@ backend/
 
 ## Lancer le projet
 
-### Frontend (Netlify compatible)
+
 ```bash
 cd frontend
 npm install
 npm run dev
 ```
 
-### Backend
+
 ```bash
 cd backend
 npm install
